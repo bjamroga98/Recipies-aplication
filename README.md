@@ -12,3 +12,5 @@ For install you need download file [RecipeInstall.exe](https://drive.google.com/
  
 ## Built With
   - [MaterialDesignThemes](https://drive.google.com/file/d/1bH07bsNdajYZtoQE0wZTuVo-1c_Gv1N_/view?usp=sharing) & [MaterialDesignColors](https://drive.google.com/file/d/1bH07bsNdajYZtoQE0wZTuVo-1c_Gv1N_/view?usp=sharing)
+  - [Microsoft.AspNet.WebApi.Client](https://dotnet.microsoft.com/apps/aspnet/apis)
+  - [Newtonsoft.Json](https://www.newtonsoft.com/json)
