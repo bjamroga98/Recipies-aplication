@@ -1,4 +1,4 @@
-# Recipes-aplication
+# Recipes-aplication [![Alt text](//placehold.it/150x100)](http://example.com/)
 Find everyday cooking inspiration on RecipesApp. You only wtrite your ingradients, and we find many recipes for you.
 ## Why?
   - You do not waste a time for found recipes in itnternet  in many website.
