@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 15 for Windows Desktop
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{060CE305-F5E3-4F73-9074-3802BD9188EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5173C7E4-6439-4EBC-91FA-C3549A922862}"
+	ProjectSection(SolutionItems) = preProject
+		WpfApp1\background.jpg = WpfApp1\background.jpg
+		WpfApp1\eiliv-sonas-aceron-IpRmUNJo_UM-unsplash.jpg = WpfApp1\eiliv-sonas-aceron-IpRmUNJo_UM-unsplash.jpg
+		WpfApp1\eiliv-sonas-aceron-nUQ5Vwra23g-unsplash.jpg = WpfApp1\eiliv-sonas-aceron-nUQ5Vwra23g-unsplash.jpg
+		WpfApp1\eiliv-sonas-aceron-Qwk6U_umGrE-unsplash.jpg = WpfApp1\eiliv-sonas-aceron-Qwk6U_umGrE-unsplash.jpg
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{060CE305-F5E3-4F73-9074-3802BD9188EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{060CE305-F5E3-4F73-9074-3802BD9188EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{060CE305-F5E3-4F73-9074-3802BD9188EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{060CE305-F5E3-4F73-9074-3802BD9188EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8611D480-41B2-400C-9058-48ACBD4FE6F5}
+	EndGlobalSection
+EndGlobal

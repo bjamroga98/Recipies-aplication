@@ -1,0 +1,58 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:materialDEsign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        mc:Ignorable="d"
+        Title="Window1" Height="550" Width="800" WindowStyle="None" AllowsTransparency="True">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="34"/>
+    </WindowChrome.WindowChrome>
+    <Grid>
+        <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+               <RowDefinition/>
+        </Grid.RowDefinitions>
+        <materialDEsign:ColorZone
+                                Mode="Inverted"
+                                Padding="10"
+                Grid.Row="0" Background="#FF673AB7">
+            <DockPanel WindowChrome.IsHitTestVisibleInChrome="True">
+                <StackPanel
+                            Orientation="Horizontal">
+                    <Button
+                                 Style="{DynamicResource MaterialDesignFloatingActionButton}" Width="30" Height="30" Click="Button_Click">
+                        <materialDEsign:PackIcon Kind="ArrowBackCircle" Width="20" Height="20" />
+                    </Button>
+                    <TextBlock
+                                    VerticalAlignment="Center"
+                                        Margin="16 0 0 0">
+                        Recipes App
+                    </TextBlock>
+                </StackPanel>
+                <Button DockPanel.Dock="Right" HorizontalAlignment="Right"  Style="{DynamicResource MaterialDesignFloatingActionButton}" Height="Auto" Width="Auto"  Margin="5,0,5,0" Padding="4" Name="close">
+                    <materialDEsign:PackIcon Kind="WindowClose" Width="20" Height="20"/>
+                </Button>
+                <Button DockPanel.Dock="Right" HorizontalAlignment="Right"  Style="{DynamicResource MaterialDesignFloatingActionButton}" Height="Auto" Width="Auto" Margin="5,0,5,0" Padding="4" Name="maximized"  >
+                    <materialDEsign:PackIcon Kind="WindowMaximize" Width="20" Height="20"  />
+                </Button>
+                <Button DockPanel.Dock="Right" HorizontalAlignment="Right"  Style="{DynamicResource MaterialDesignFloatingActionButton}" Height="Auto" Width="Auto" Margin="5,0,5,0" Padding="4" Name="minimized"  >
+                    <materialDEsign:PackIcon Kind="WindowMinimize" Width="20" Height="20"  />
+                </Button>
+            </DockPanel>
+        </materialDEsign:ColorZone>
+        <ScrollViewer Grid.Row="1" Name="scroll" CanContentScroll="True" Padding="10">
+            <WrapPanel Orientation="Horizontal" x:Name="wrap">
+   
+            </WrapPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
