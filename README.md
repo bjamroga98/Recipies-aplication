@@ -6,8 +6,9 @@ Find everyday cooking inspiration on RecipesApp. You only wtrite your ingredient
 ## Install
 For install you need download file [RecipeInstall.exe](https://drive.google.com/file/d/1bH07bsNdajYZtoQE0wZTuVo-1c_Gv1N_/view?usp=sharing) , end install this aplication. 
 
-## Photo 
+## Photos
 ![](https://raw.githubusercontent.com/bjamroga98/JamrogaBarbaraLab1/master/img/recipiesapp.png)
+![](https://raw.githubusercontent.com/bjamroga98/JamrogaBarbaraLab1/master/img/recipiesapp1.png)
  
 ## Built With
   - [MaterialDesignThemes](https://drive.google.com/file/d/1bH07bsNdajYZtoQE0wZTuVo-1c_Gv1N_/view?usp=sharing) & [MaterialDesignColors](https://drive.google.com/file/d/1bH07bsNdajYZtoQE0wZTuVo-1c_Gv1N_/view?usp=sharing)
