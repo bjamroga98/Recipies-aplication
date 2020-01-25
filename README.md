@@ -1,5 +1,5 @@
 # Recipes-aplication ![](https://github.com/bjamroga98/Recipies-aplication/blob/master/allergen_oat_icon-icons.com_56424.ico)
-Find everyday cooking inspiration on RecipesApp. You only wtrite your ingradients, and we find many recipes for you.
+Find everyday cooking inspiration on RecipesApp. You only wtrite your ingredients, and we find many recipes for you.
 ## Why?
   - You do not waste a time for found recipes in itnternet  in many website.
   - We found special delicious dishes for your taste.
