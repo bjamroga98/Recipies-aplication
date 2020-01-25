@@ -5,6 +5,9 @@ Find everyday cooking inspiration on RecipesApp. You only wtrite your ingradient
   - We found special delicious dishes for your taste.
 ## Install
 For install you need download file [RecipeInstall.exe](https://drive.google.com/file/d/1bH07bsNdajYZtoQE0wZTuVo-1c_Gv1N_/view?usp=sharing) , end install this aplication. 
+
+## Photo
+![](https://raw.githubusercontent.com/bjamroga98/JamrogaBarbaraLab1/master/img/recipiesapp.png)
  
 ## Built With
   - [MaterialDesignThemes](https://drive.google.com/file/d/1bH07bsNdajYZtoQE0wZTuVo-1c_Gv1N_/view?usp=sharing) & [MaterialDesignColors](https://drive.google.com/file/d/1bH07bsNdajYZtoQE0wZTuVo-1c_Gv1N_/view?usp=sharing)
