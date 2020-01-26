@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		WpfApp1\eiliv-sonas-aceron-Qwk6U_umGrE-unsplash.jpg = WpfApp1\eiliv-sonas-aceron-Qwk6U_umGrE-unsplash.jpg
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeApp.test", "RecipeApp.test\RecipeApp.test.csproj", "{36603DDA-14F9-4EAB-9EB3-AF1F429CFA8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{060CE305-F5E3-4F73-9074-3802BD9188EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{060CE305-F5E3-4F73-9074-3802BD9188EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{060CE305-F5E3-4F73-9074-3802BD9188EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36603DDA-14F9-4EAB-9EB3-AF1F429CFA8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36603DDA-14F9-4EAB-9EB3-AF1F429CFA8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36603DDA-14F9-4EAB-9EB3-AF1F429CFA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36603DDA-14F9-4EAB-9EB3-AF1F429CFA8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

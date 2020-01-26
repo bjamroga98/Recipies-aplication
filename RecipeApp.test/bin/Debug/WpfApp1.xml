@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WpfApp1</name>
+    </assembly>
+    <members>
+        <member name="M:WpfApp1.MainWindowControler.LoadData(System.String,System.String)">
+            <summary>
+            Load data 
+            </summary>
+            <param name="ingradients">
+            contains ingradient parameter
+            </param>
+            <param name="category">
+            contains ingradient category
+            </param>
+            <returns></returns>
+        </member>
+        <member name="T:WpfApp1.ClientAPI.NetworkService">
+            <summary>
+            Service for API client
+            </summary>
+        </member>
+        <member name="P:WpfApp1.ClientAPI.NetworkService.ApiClient">
+            <summary>
+            Client for connect
+            </summary>
+        </member>
+        <member name="M:WpfApp1.ClientAPI.NetworkService.InitializeClient">
+            <summary>
+            method intialize client
+            </summary>
+        </member>
+        <member name="T:WpfApp1.ClientAPI.NetworkAsync">
+            <summary>
+            Class get parametrs and make request
+            </summary>
+        </member>
+        <member name="F:WpfApp1.ClientAPI.NetworkAsync.formatters">
+            <summary>
+            Media type formatter
+            </summary>
+        </member>
+        <member name="M:WpfApp1.ClientAPI.NetworkAsync.getJSON(System.String,System.String)">
+            <summary>
+            Get Json and convert to c# object
+            </summary>
+            <param name="ingredients">contains ingradients parameters</param>
+            <param name="mealType">contains mealtype parameter</param>
+            <returns>rootModel</returns>
+        </member>
+        <member name="T:WpfApp1.models.RecipeModel">
+            <summary>
+            Recipe model
+            </summary>
+        </member>
+        <member name="T:WpfApp1.models.RootModel">
+            <summary>
+            Root model
+            </summary>
+        </member>
+        <member name="T:WpfApp1.Window1">
+            <summary>
+            Interaction logic for Window1.xaml
+            </summary>
+            <summary>
+            Window1
+            </summary>
+        </member>
+        <member name="F:WpfApp1.Window1.rootModel">
+            <summary>
+             JSON response in C# object
+            </summary>  
+        </member>
+        <member name="M:WpfApp1.Window1.btn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Button click lisner , open Window with website and close Window with card
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WpfApp1.Window1.#ctor(WpfApp1.models.RootModel)">
+            <summary>
+            Main Window method , create a top panel
+            </summary>
+            <param name="rootModel">
+            JSON response in C# object
+            </param>
+        </member>
+        <member name="M:WpfApp1.Window1.cardAdapter">
+            <summary>
+            Card create method, XAML
+            </summary>
+        </member>
+        <member name="M:WpfApp1.Window1.Button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button click lisner , close current Window and  open MainWindow
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WpfApp1.Window1.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfApp1.Window2">
+            <summary>
+            Interaction logic for Window2.xaml
+            </summary>
+            <summary>
+            Window2
+            </summary>
+        </member>
+        <member name="F:WpfApp1.Window2.link">
+            <summary>
+            Contains link 
+            </summary>
+        </member>
+        <member name="F:WpfApp1.Window2.rootModel">
+            <summary>
+            JSON response in C# object
+            </summary>
+        </member>
+        <member name="M:WpfApp1.Window2.#ctor(System.String,WpfApp1.models.RootModel)">
+            <summary>
+            Main Window method , create top panel
+            </summary>
+            <param name="link">Contains link </param>
+            <param name="rootModel">JSON response in C# object</param>
+        </member>
+        <member name="M:WpfApp1.Window2.Button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button click lisner, hide current window and oprn window with card
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WpfApp1.Window2.HideScriptErrors(System.Windows.Controls.WebBrowser,System.Boolean)">
+            <summary>
+            Method Hide errors in browser Internet Explorer
+            </summary>
+            <param name="wb">Xaml elemet webbrowser</param>
+            <param name="Hide"></param>
+        </member>
+        <member name="M:WpfApp1.Window2.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfApp1.App">
+            <summary>
+            Логика взаимодействия для App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:WpfApp1.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:WpfApp1.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:WpfApp1.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:WpfApp1.MainWindow.#ctor">
+            <summary>
+            Main Window method , create a top panel
+            </summary>
+        </member>
+        <member name="M:WpfApp1.MainWindow.Button_ClickAsync(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button click lisner
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WpfApp1.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfApp1.Properties.Resources">
+            <summary>
+              Класс ресурсов со строгим типом для поиска локализованных строк и пр.
+            </summary>
+        </member>
+        <member name="P:WpfApp1.Properties.Resources.ResourceManager">
+            <summary>
+              Возврат кэшированного экземпляра ResourceManager, используемого этим классом.
+            </summary>
+        </member>
+        <member name="P:WpfApp1.Properties.Resources.Culture">
+            <summary>
+              Переопределяет свойство CurrentUICulture текущего потока для всех
+              подстановки ресурсов с помощью этого класса ресурсов со строгим типом.
+            </summary>
+        </member>
+    </members>
+</doc>

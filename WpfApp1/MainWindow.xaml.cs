@@ -40,64 +40,31 @@ namespace WpfApp1
         /// <param name="e"></param>
         private async void Button_ClickAsync(object sender, RoutedEventArgs e)
         {
-
-            if (checkTextBoxIsEmpty())
-                return;
-                
-            NetworkService.InitializeClient();
-            string pattern = "[,. /]";
-            string resultLine = Regex.Replace(ingradient.Text.ToString().Trim(), pattern, ",");
-            RootModel model = await LoadData(resultLine, category.Text);
-
-            if (checkResultContent(model))
-                return;
-
-            Window1 w = new Window1(model);
-            w.Show();
-            this.Close();
-        }
-        /// <summary>
-        /// Load data 
-        /// </summary>
-        /// <param name="ingradients">
-        /// contains ingradient parameter
-        /// </param>
-        /// <param name="category">
-        /// contains ingradient category
-        /// </param>
-        /// <returns></returns>
-        private static async Task<RootModel> LoadData(string ingradients, string category)
-        {
-            RootModel rootModel = await NetworkAsync.getJSON(ingradients, category);
-            return rootModel;
-        }
-
-        /// <summary>
-        /// validation result content in TextBox
-        /// </summary>
-        /// <param name="model"></param>
-        /// <returns></returns>
-        private Boolean checkResultContent(RootModel model)
-        {
-            if (model.results.Count != 0)
-                return false;
-
-            errorText.Text = "We don't find any recipe with your " + Environment.NewLine + "ingradients , please try again. "; 
-            return true;
-        }
-        /// <summary>
-        /// validation result in TextBox 
-        /// </summary>
-        /// <returns> if TextBox is empty return false </returns>
-        private Boolean checkTextBoxIsEmpty ()
-        {
-            if (string.IsNullOrWhiteSpace(ingradient.Text) && string.IsNullOrWhiteSpace(category.Text))
+            MainWindowControler controler = new MainWindowControler();
+            try
             {
-                errorText.Text = "Please wrire your ingradiets";
-                return true;
-            }
-            return false;
-        }
+               RootModel model = await controler.makeQueryAsync(ingradient.Text, category.Text);
 
+                if (model == null)
+                {
+                   errorText.Text = "We don't find any recipe with your " + Environment.NewLine + "ingradients , please try again. ";
+                   return;
+                }
+
+                Window1 w = new Window1(model);
+                w.Show();
+                this.Close();
+            }
+            catch(NullReferenceException ex)
+            {
+                errorText.Text = "Please write your ingradiets";
+                return;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            
+        } 
     }
 }

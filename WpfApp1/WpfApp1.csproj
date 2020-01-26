@@ -136,6 +136,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MainWindowControler.cs" />
     <Compile Include="ClientAPI\NetworkService.cs" />
     <Compile Include="ClientAPI\NetworkAsync.cs" />
     <Compile Include="models\RecipeModel.cs" />
